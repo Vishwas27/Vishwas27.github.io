@@ -7,33 +7,112 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Vishwas Chhimpa's Personal Website</h1>
-    </header>
 
-    <section id="personal-info">
-        <h2>About Me</h2>
-        <img src="assets/profile_pic.jpeg" alt="Profile Picture">
-        <p>Hello! I’m Vishwas Chhimpa, a Senior Data Scientist with 3.5+ years of experience in predictive analysis, computer vision, and machine learning. My journey in data science has been driven by a passion for solving complex problems and delivering impactful insights.</p>
-    </section>
+    <!-- Fixed left column box containing profile picture, name, job, and links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <div class="resume-wrapper">
+        <section class="profile section-padding">
+            <div class="container">
+                <div class="picture-resume-wrapper">
+                    <div class="picture-resume">
+                        <span><img src="assets/profile_pic.jpeg" alt="Vishwas Chhimpa" /></span>
+                        <!-- SVG Graphics for bubbles -->
+                        <svg version="1.1" viewBox="0 0 350 350">
+                            <!-- SVG content here -->
+                        </svg>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="name-wrapper">
+                    <h1>Vishwas <br/> Chhimpa</h1> <!-- Your Name -->
+                </div>
+                <div class="clearfix"></div>
+                <div class="contact-info clearfix">
+                    <ul class="list-titles">
+                        <li>Call</li>
+                        <li>Mail</li>
+                        <li>LinkedIn</li>
+                        <li>Location</li>
+                    </ul>
+                    <ul class="list-content">
+                        <li>+91 9800554777</li> <!-- Your Phone Number -->
+                        <li>vishwaschhimpa27@gmail.com</li> <!-- Your Email -->
+                        <li><a href="https://www.linkedin.com/in/vishwas-chhimpa-4751b8113/">Vishwas Chhimpa</a></li> <!-- Your LinkedIn -->
+                        <li>Gurugram, India</li> <!-- Your Location -->
+                    </ul>
+                </div>
+                <div class="contact-presentation">
+                    <p><span class="bold">Senior Data Scientist</span> with 3.5+ years of experience in Computer Vision, building scalable ML models, CNN, RNN, Generative AI, LLMs, NLP. Proficient in Machine Learning, Deep Learning techniques, and deploying automation to deliver scalable solutions to complex business problems and provide analytics insights. Skilled in Python, Keras, SQL, TensorFlow, Snowflake, PowerBI, Salesforce, Google BigQuery, and other cloud platforms. Seeking opportunities in AI and Software Domain.</p>
+                </div>
+                <div class="contact-social clearfix">
+                    <ul class="list-titles">
+                        <li>GitHub</li>
+                        <li>Springer</li>
+                    </ul>
+                    <ul class="list-content">
+                        <li><a href="https://github.com/Vishwas27">Vishwas27</a></li> <!-- Your GitHub -->
+                        <li><a href="https://link.springer.com/chapter/10.1007/978-981-15-8315-5_47">Springer Publication</a></li> <!-- Your Springer Publication -->
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="career-flow">
-        <h2>My Career Journey</h2>
-        <img src="assets/career-diagram.png" alt="Career Flow Diagram">
-        <p>This diagram represents my career path, highlighting key milestones, roles, and skills I've developed over the years.</p>
-    </section>
+        <section class="experience section-padding">
+            <div class="container">
+                <h3 class="experience-title">Experience</h3>
+                <div class="experience-wrapper">
+                    <div class="company-wrapper clearfix">
+                        <div class="experience-title">Axtria</div>
+                        <div class="time">September 2020 - January 2024</div>
+                    </div>
+                    <div class="job-wrapper clearfix">
+                        <div class="experience-title">Senior Data Scientist | Senior Consultant</div>
+                        <div class="company-description">
+                            <p>• Forecast multiple sales time series using ensemble Machine Learning algorithms like Regression, Decision Tree, LSTM, Time-series forecasting, and Moving averages considering sparse and short history sales data while handling seasonality and holiday trends.</p>
+                            <p>• Created practical sales force strategies that generated higher sales, detailed multiple products, supported new product launches, and defended against new competitive product launches, directly impacting a positive new profit of $15 million for one business unit.</p>
+                            <p>• Leveraged technologies like GNNs, CatBoost/XGBoost, LLMs, etc., to create deliverables for client sales strategies.</p>
+                            <p>• Employed Docker containers and Kubernetes for containerization and orchestration of machine learning workflows.</p>
+                            <p>• Created required automation based on client requirements in data workflows from data ingestion, quality checks, processing, modeling, to final data creation and reports using AWS, Snowflake, Salesforce, and PowerBI.</p>
+                        </div>
+                    </div>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="projects/project1.html">Project 1: Predictive Sales Analysis</a></li>
-            <li><a href="projects/project2.html">Project 2: LSTM Model for Time Series Forecasting</a></li>
-            <li><a href="projects/project3.html">Project 3: Computer Vision Application</a></li>
-        </ul>
-    </section>
+                    <div class="company-wrapper clearfix">
+                        <div class="experience-title">Axtria</div>
+                        <div class="time">May 2019 - July 2019</div>
+                    </div>
+                    <div class="job-wrapper clearfix">
+                        <div class="experience-title">Software Developer | Internship</div>
+                        <div class="company-description">
+                            <p>• Developed an MVP product using Firebase, GCP, and Vue.js, integrating APIs like Places API, Email API, Google Analytics, and SMS API.</p>
+                            <p>• Designed and developed a Web App from scratch using Bootstrap Vue and Material design.</p>
+                            <p>• Built a recommendation model using collaborative filters with cosine similarity between user-user, package-package, and user-package rating matrices.</p>
+                            <p>• Predicted unknown ratings using matrix factorization with stochastic gradient descent on parents user-package rating matrix.</p>
+                        </div>
+                    </div>
 
-    <footer>
-        <p>&copy; 2024 Vishwas Chhimpa. All rights reserved.</p>
-    </footer>
+                    <!-- Additional experience sections can be added here -->
+                </div>
+
+                <div class="section-wrapper clearfix">
+                    <h3 class="section-title">Skills</h3>
+                    <ul>
+                        <li class="skill-percentage">Python, SQL, C, C++, MATLAB, VBA, HTML, CSS</li>
+                        <li class="skill-percentage">Machine Learning, Deep Learning, Neural Networks, TensorFlow, Keras</li>
+                        <li class="skill-percentage">Computer Vision, NLP, LSTM, CNN, RNN</li>
+                        <li class="skill-percentage">Cloud Platforms: AWS, Snowflake, Salesforce, GCP</li>
+                        <li class="skill-percentage">ETL, PowerBI, Scikit-Learn, OpenCV</li>
+                    </ul>
+                </div>
+
+                <div class="section-wrapper clearfix">
+                    <h3 class="section-title">Hobbies</h3>
+                    <p>• Sketching and exploring various art styles.</p>
+                    <p>• Football enthusiast and avid follower of the sport.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+    </div>
 </body>
 </html>
