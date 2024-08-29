@@ -3,68 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishwas Chhimpa - Personal Website</title>
+    <title>Vishwas Chhimpa - Resume</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-
-    <!-- Fixed left column box containing profile picture, name, job, and links -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <div class="resume-wrapper">
         <section class="profile section-padding">
             <div class="container">
                 <div class="picture-resume-wrapper">
                     <div class="picture-resume">
-                        <span><img src="assets/profile_pic.jpeg" alt="Vishwas Chhimpa" /></span>
-                        <!-- SVG Graphics for bubbles -->
-                        <svg version="1.1" viewBox="0 0 350 350">
-                            <!-- SVG content here -->
+                        <span><img src="assets/profile_pic.jpg" alt="Vishwas Chhimpa" /></span>
+                        <svg version="1.1" viewBox="0 0 220 220" class="profile-animation">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+                                </filter>
+                            </defs>
+                            <g filter="url(#goo)">
+                                <circle id="main_circle" class="st0" cx="110" cy="110" r="91"/>
+                                <circle id="circle" class="bubble0 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble1 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble2 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble3 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble4 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble5 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble6 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble7 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble8 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble9 st1" cx="110" cy="110" r="80"/>
+                                <circle id="circle" class="bubble10 st1" cx="110" cy="110" r="80"/>
+                            
+                            </g>
                         </svg>
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="name-wrapper">
-                    <h1>Vishwas <br/> Chhimpa</h1> <!-- Your Name -->
-                </div>
-                <div class="clearfix"></div>
-                <div class="contact-info clearfix">
-                    <ul class="list-titles">
-                        <li>Call</li>
-                        <li>Mail</li>
-                        <li>LinkedIn</li>
-                        <li>Location</li>
-                    </ul>
-                    <ul class="list-content">
-                        <li>+91 9800554777</li> <!-- Your Phone Number -->
-                        <li>vishwaschhimpa27@gmail.com</li> <!-- Your Email -->
-                        <li><a href="https://www.linkedin.com/in/vishwas-chhimpa-4751b8113/">Vishwas Chhimpa</a></li> <!-- Your LinkedIn -->
-                        <li>Gurugram, India</li> <!-- Your Location -->
-                    </ul>
+                    <h1>Vishwas <br/>Chhimpa</h1>
                 </div>
                 <div class="contact-presentation">
-                    <p><span class="bold">Senior Data Scientist</span> with 3.5+ years of experience in Computer Vision, building scalable ML models, CNN, RNN, Generative AI, LLMs, NLP. Proficient in Machine Learning, Deep Learning techniques, and deploying automation to deliver scalable solutions to complex business problems and provide analytics insights. Skilled in Python, Keras, SQL, TensorFlow, Snowflake, PowerBI, Salesforce, Google BigQuery, and other cloud platforms. Seeking opportunities in AI and Software Domain.</p>
+                    <p><span class="bold">Senior Data Scientist</span>
+                         <br>with 3.5+ years of experience in Computer Vision, building scalable ML models, CNN, RNN, Generative AI, LLMs, NLP. Proficient in Machine Learning, Deep Learning techniques, and deploying automation to deliver scalable solutions to complex business problems and provide analytics insights. Skilled in Python, Keras, SQL, TensorFlow, Snowflake, PowerBI, Salesforce, Google BigQuery, and other cloud platforms. Seeking opportunities in AI and Software Domain.</p>
                 </div>
-                <div class="contact-social clearfix">
-                    <ul class="list-titles">
-                        <li>GitHub</li>
-                        <li>Springer</li>
-                    </ul>
-                    <ul class="list-content">
-                        <li><a href="https://github.com/Vishwas27">Vishwas27</a></li> <!-- Your GitHub -->
-                        <li><a href="https://link.springer.com/chapter/10.1007/978-981-15-8315-5_47">Springer Publication</a></li> <!-- Your Springer Publication -->
-                    </ul>
+                <div class="clearfix"></div>
+
+                <div class="fixed-box">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i> 
+                        <span>Call - +91 9800554777</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i> 
+                        <span>LinkedIn - 
+                            <a href="https://www.linkedin.com/in/vishwas-chhimpa-4751b8113/">Vishwas Chhimpa</a>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i> 
+                        <span>Web - vishwaschhimpa27@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-house"></i> 
+                        <span>Home - Gurugram, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i> 
+                        <span>GitHub - 
+                            <a href="https://github.com/Vishwas27">Vishwas27</a>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-book"></i> 
+                        <span>Springer - 
+                            <a href="https://link.springer.com/chapter/10.1007/978-981-15-8315-5_47">Springer Publication</a>
+                        </span>
+                    </div>
                 </div>
+                
+                
             </div>
         </section>
-
+        
         <section class="experience section-padding">
             <div class="container">
                 <h3 class="experience-title">Experience</h3>
+                <i data-feather="circle"></i>
+                
+                
                 <div class="experience-wrapper">
                     <div class="company-wrapper clearfix">
                         <div class="experience-title">Axtria</div>
                         <div class="time">September 2020 - January 2024</div>
                     </div>
+                    
                     <div class="job-wrapper clearfix">
                         <div class="experience-title">Senior Data Scientist | Senior Consultant</div>
                         <div class="company-description">
@@ -75,44 +110,40 @@
                             <p>• Created required automation based on client requirements in data workflows from data ingestion, quality checks, processing, modeling, to final data creation and reports using AWS, Snowflake, Salesforce, and PowerBI.</p>
                         </div>
                     </div>
-
+                    
                     <div class="company-wrapper clearfix">
                         <div class="experience-title">Axtria</div>
                         <div class="time">May 2019 - July 2019</div>
                     </div>
+                    
                     <div class="job-wrapper clearfix">
                         <div class="experience-title">Software Developer | Internship</div>
                         <div class="company-description">
-                            <p>• Developed an MVP product using Firebase, GCP, and Vue.js, integrating APIs like Places API, Email API, Google Analytics, and SMS API.</p>
+                            <p>MVP product, Firebase, GCP, and Vue.js, integrating APIs like Places API, Email API, Google Analytics, and SMS API.</p>
                             <p>• Designed and developed a Web App from scratch using Bootstrap Vue and Material design.</p>
                             <p>• Built a recommendation model using collaborative filters with cosine similarity between user-user, package-package, and user-package rating matrices.</p>
                             <p>• Predicted unknown ratings using matrix factorization with stochastic gradient descent on parents user-package rating matrix.</p>
                         </div>
                     </div>
-
-                    <!-- Additional experience sections can be added here -->
                 </div>
-
+                
                 <div class="section-wrapper clearfix">
                     <h3 class="section-title">Skills</h3>
                     <ul>
-                        <li class="skill-percentage">Python, SQL, C, C++, MATLAB, VBA, HTML, CSS</li>
+                        <li class="skill-percentage">Python, SQL</li>
                         <li class="skill-percentage">Machine Learning, Deep Learning, Neural Networks, TensorFlow, Keras</li>
-                        <li class="skill-percentage">Computer Vision, NLP, LSTM, CNN, RNN</li>
-                        <li class="skill-percentage">Cloud Platforms: AWS, Snowflake, Salesforce, GCP</li>
-                        <li class="skill-percentage">ETL, PowerBI, Scikit-Learn, OpenCV</li>
+                        <li class="skill-percentage">NLP, LLM, LSTM, CNN, RNN</li>
+                        <li class="skill-percentage">Cloud Platforms: AWS, GCP</li>
                     </ul>
                 </div>
-
-                <div class="section-wrapper clearfix">
-                    <h3 class="section-title">Hobbies</h3>
-                    <p>• Sketching and exploring various art styles.</p>
-                    <p>• Football enthusiast and avid follower of the sport.</p>
-                </div>
+                
+                
             </div>
         </section>
 
         <div class="clearfix"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
