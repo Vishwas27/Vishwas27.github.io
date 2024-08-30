@@ -32,3 +32,17 @@ var select = function(s) {
   }
   
   tl.seek(50);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select the wrapper containing the scrollable items
+    const scrollWrapper = document.querySelector('.scroll-x');
+    
+    // Calculate the position to scroll to (third card)
+    // Assuming each card has equal width and there are gaps between cards
+    const cardWidth = document.querySelector('.items > .card').offsetWidth;
+    const gutter = parseFloat(getComputedStyle(scrollWrapper).getPropertyValue('--gutter'));
+    const scrollPosition = 1 * (cardWidth + gutter); // Index 2 for third card (0-based)
+
+    // Set the initial scroll position
+    scrollWrapper.scrollLeft = scrollPosition;
+  });
