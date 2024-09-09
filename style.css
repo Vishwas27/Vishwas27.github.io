@@ -1,12 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
+
+
+:root {
+  --color-template-1: #F4DCBC;
+  --color-fg: #F4DCBC;
+  --color-bg: #1B3248;
+  --color-bg-2: #4a4e51;
+  --color-bg-3: #9099a0;
+  --color-bg-1: #fff;
+  --color-right-bg: #4C7395;
+}
+
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  margin-top: 0px;
+  background-image: url('assets/BG6.jpg');
+  background-size: cover; /* Stretches the image to cover the entire view */
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Makes the background image fixed during scroll */
+  height: 100vh; /* Sets the height to 100% of the viewport */
+  width: 100vw; /* Sets the width to 100% of the viewport */
 }
 
 body {
@@ -16,7 +37,7 @@ body {
 }
 
 a {
-  color: #449DD1;
+  color: var(--color-fg);
   text-decoration: none;
 }
 
@@ -30,7 +51,7 @@ a {
 }
 
 .bold {
-  color: #4a4e51;
+  color: var(--color-fg);
   font-weight: 400;
 }
 
@@ -49,15 +70,18 @@ a {
 }
 
 .profile {
-  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); ;
+  background: inherit;
+  backdrop-filter: blur(12px);
   width: 25%;
+  height: 100%;
   float: left;
-  color: #9099a0;
+  color: var(--color-bg-3);
   display: block;
   position: fixed;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .profile {
     width: 100%;
     position: relative;
@@ -74,7 +98,7 @@ a {
   font-size: 2.5em;
   text-align: center;
   font-family: "Varela Round", sans-serif;
-  color: #4a4e51;
+  color: var(--color-fg);
   text-transform: uppercase;
   line-height: 1em;
   padding-top: 10px;
@@ -115,7 +139,8 @@ a {
   position: relative;
   width: 200px; /* Size of the profile picture */
   height: 200px;
-  background-color: #fff;
+  background: inherit;
+  backdrop-filter: blur(10px);
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
@@ -143,7 +168,7 @@ a {
 }
 
 .profile .st0, .profile .st1 {
-  fill: #449DD1;
+  fill: var(--color-fg);
 }
 
 .profile .contact-info {
@@ -168,7 +193,7 @@ a {
   text-align: left;
   font-weight: 600;
   width: 40%;
-  color: #4a4e51;
+  color: var(--color-bg-2);
 }
 
 .profile .list-content {
@@ -236,16 +261,16 @@ a {
 }
 
 .profile .st0, .profile .st1 {
-  fill: #449DD1;
+  fill: var(--color-fg);
 }
 
 .experience {
-  background: #3d3e42;
+  background: var(--color-bg);
   left: 25%;
   width: 75%;
   float: left;
   position: relative;
-  color: #9099a0;
+  color: var(--color-bg-3);
   font-weight: 300;
   min-height: 100%;
   min-height: 100vh;
@@ -260,7 +285,7 @@ a {
 
 .experience h2.experience-title {
   margin-top: 60px;
-  color: #449DD1;
+  color: var(--color-fg);
   text-align: left;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -311,7 +336,7 @@ a {
 }
 
 .experience .experience-title {
-  color: white;
+  color: var(--color-bg-1);
   margin-bottom: 15px;
 }
 
@@ -335,7 +360,7 @@ a {
   width: 50%;
   float: left;
   text-align: left;
-  color: #9099a0;
+  color: var(--color-bg-3);
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -351,7 +376,7 @@ a {
 }
 
 .section-wrapper h2.section-title {
-  color: #449DD1;
+  color: var(--color-fg);
   text-align: left;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -368,7 +393,7 @@ a {
   content: "";
   width: 100%;
   height: 6px;
-  background: #4a4e51;
+  background: var(--color-bg-2);
   display: block;
   margin-top: 3px;
 }
@@ -376,7 +401,7 @@ a {
 .section-wrapper .skill-percentage::before {
   content: "";
   height: 6px;
-  background: #449DD1;
+  background: var(--color-fg);
   position: absolute;
   margin-top: 3px;
   bottom: 0;
@@ -497,11 +522,6 @@ a {
   }
  
 
-  :root {
-    --color-fg: #449DD1;
-    --color-bg: #3d3e42;
-  }
-
   .scroll-x {
     max-width: 100%;
     overflow-x: auto;
@@ -546,7 +566,7 @@ a {
       scroll-snap-align: center;
       font-size: 1.5rem;
       font-weight: 600;
-      color: white;
+      color: var(--color-bg-1);
       background-color: var(--color-fg);
       border-radius: 0.5rem;
     }
@@ -664,7 +684,7 @@ a {
         display: flex;
         justify-content: center; /* Centers text horizontally */
         align-items: center; /* Centers text vertically */
-        color: white;
+        color: var(--color-bg-1);
         font-size: 1.5rem;
         text-align: center;
         opacity: 0.6; /* Hidden by default */
