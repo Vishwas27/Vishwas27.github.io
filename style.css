@@ -21,13 +21,15 @@
 html, body {
   height: 100%;
   margin-top: 0px;
+  margin-left: 1vw;
+  margin-right: 1vw;
   background-image: url('assets/BG6.jpg');
   background-size: cover; /* Stretches the image to cover the entire view */
   background-position: center; /* Keeps the image centered */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Makes the background image fixed during scroll */
   height: 100vh; /* Sets the height to 100% of the viewport */
-  width: 100vw; /* Sets the width to 100% of the viewport */
+  width: 96vw; /* Sets the width to 100% of the viewport */
 }
 
 body {
@@ -45,6 +47,7 @@ a {
   content: " ";
   display: table;
 }
+
 
 .clearfix::after {
   clear: both;
@@ -82,8 +85,13 @@ a {
 }
 
 @media (max-width: 900px) {
+  body{
+    margin: 0px;
+  }
+
   .profile {
     width: 100%;
+    height: fit-content;
     position: relative;
   }
 }
